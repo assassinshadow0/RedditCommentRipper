@@ -59,7 +59,7 @@ In a sense, it is a bot, training another bot.
 ## Contributing
 Pull requests are welcome.
 
-## check out the results of this tool
+## Check out the results of this tool
 https://selfieai.live/
 
 ## License
