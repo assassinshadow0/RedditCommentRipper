@@ -48,7 +48,8 @@ animation:
 This animation is out of the world! Can't believe an indie dev made this 
 
 ```
-
+The file will be saved in:
+C:/Users/%user name%/AppData/LocalLow/AssassinShadow/RedditCommentRipper/comments.txt
 ## Background
 Why this?
 
