@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{576B5A5E-78BD-FC32-FE2F-200E5A8186E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2017_4_33;UNITY_2017_4;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;NATIVE_PLUGINS_LITE_VERSION;USES_ADDRESS_BOOK;USES_NETWORK_CONNECTIVITY;USES_SHARING;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\AssetStoreProductUtility\Demo\Scripts\DemoGUIWindow.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\AssetStoreProductUtility\Demo\Scripts\DemoMainMenu.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\AssetStoreProductUtility\Demo\Scripts\DemoSubMenu.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\AssetStoreProductUtility\Scripts\Debug\DebugUtility.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\AssetStoreProductUtility\Scripts\Debug\NullLogger.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\AssetStoreProductUtility\Scripts\Internal\Constants.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\AssetStoreProductUtility\Scripts\Internal\ProductUpdateInfo.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\AssetStoreProductUtility\Scripts\Internal\UpdatePromptWindow.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\AssetStoreProductUtility\Scripts\Product\AssetStoreProduct.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\AssetStoreProductUtility\Scripts\Product\IAssetStoreProduct.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\DesignPatterns\Scripts\Observer\IObserver.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\DesignPatterns\Scripts\Observer\ObserverPattern.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\DesignPatterns\Scripts\Singleton\ISingleton.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\DesignPatterns\Scripts\Singleton\SingletonPattern.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Automators\Script\AndroidManifest\AndroidManifestGenerator.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Automators\Script\AndroidManifest\AndroidManifestGenerator.Feature.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Automators\Script\GlobalDefines\GlobalDefinesManager.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Assets\AssetDatabaseUtils.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Component\ComponentExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\DateTime\DateTimeExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Enumeration\EnumerationExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\GameObject\GameObjectExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Generics\GenericsExtension.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\GenericTypes\IDictionaryExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\IO\IOExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\MonoBehaviour\MonoBehaviourExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\PlayerSettings\PlayerSettings.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Reflection\ReflectionExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\ScriptableObject\ISaveAssetCallback.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\ScriptableObject\ScriptableObjectUtils.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\ScriptableObject\SharedScriptableObject.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\String\StringExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Texture\TextureExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Transform\TransformExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Type\TypeExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Vector\VectorExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\IO\Scripts\FileOperations.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Parser\Demo\Script\JSON\JSONDemo.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Parser\Demo\Script\Plist\PlistDemo.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Parser\Scripts\JSON\Extensions\JSONParserExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Parser\Scripts\JSON\Internal\Constants\Constants.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Parser\Scripts\JSON\Internal\DataTypes\Enums\Enums.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Parser\Scripts\JSON\Internal\DataTypes\JSONString\JSONString.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Parser\Scripts\JSON\JSONReader.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Parser\Scripts\JSON\JSONUtility.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Parser\Scripts\JSON\JSONWriter.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Parser\Scripts\Plist\Plist.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Plugins\Binding\NativeBinding.Android.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Plugins\Binding\NativeBinding.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\BitConverterEx.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifBitConverter.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifEnums.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifExceptions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifExtendedProperty.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifExtensionMethods.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifFile.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifInterOperability.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifProperty.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifPropertyFactory.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifTag.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifTagFactory.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\JPEGExceptions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\JPEGFile.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\JPEGMarker.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\JPEGSection.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\MathEx.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UI\Script\Base\GUIModalWindow.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UI\Script\Base\GUIScrollView.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UI\Script\GUIDialogs\GUIAlertDialog.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UI\Script\GUIDialogs\GUIDialog.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UI\Script\GUIDialogs\GUIPromptDialog.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UI\Script\GUIExtensions\GUIExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UI\Script\GUILayoutUtility\UnityGUILayoutUtility.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UI\Script\GUIMenuSystem\GUIMainMenu.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UI\Script\GUIMenuSystem\GUIMenuBase.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UI\Script\GUIMenuSystem\GUISubMenu.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\EnumMask\EnumMaskFieldAttribute.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\InspectorButton\Enums.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\InspectorButton\InspectorButtonAttribute.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\InspectorButton\InspectorButtonInfo.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\OnValueChange\ExecuteOnValueChangeAttribute.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\Popup\PopupAttribute.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\Regex\RegexAttribute.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\Invoke\EditorUtils.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\PromptWindow\PromptWindow.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\Scheduler\EditorScheduler.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Web\Demo\Scripts\DownloadTextureDemo.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Web\Scripts\Request\Base\Request.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Web\Scripts\Request\Base\WebRequest.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Web\Scripts\Request\FileDownload\DownloadAsset.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Web\Scripts\Request\FileDownload\DownloadAssetBundle.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Web\Scripts\Request\FileDownload\DownloadTexture.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Web\Scripts\Request\GET\GETRequest.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Web\Scripts\Request\POST\POSTRequest.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Web\Scripts\Response\WebResponse.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\Common\Utility\Web\Scripts\URL\URL.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\AddonServices\SoomlaGrow\Binding\Android\SoomlaGrowServiceAndroid.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\AddonServices\SoomlaGrow\Binding\Android\SoomlaGrowServiceAndroid.Native.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\AddonServices\SoomlaGrow\Binding\Base\SoomlaGrowService.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\AddonServices\SoomlaGrow\Binding\Base\SoomlaGrowService.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\AddonServices\SoomlaGrow\Binding\iOS\SoomlaGrowServiceIOS.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\AddonServices\SoomlaGrow\Binding\UnityEditor\SoomlaGrowServiceEditor.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\AddonServices\SoomlaGrow\DataTypes\Enums.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\AddonServices\SoomlaGrow\Settings\SoomlaGrowServiceSettings.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\AddonServices\SoomlaGrow\Utility\SoomlaGrowServiceUtility.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\AddressBook\Binding\Android\AddressBookAndroid.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\AddressBook\Binding\Android\AddressBookAndroid.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\AddressBook\Binding\Android\AddressBookAndroid.Native.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\AddressBook\Binding\Base\AddressBook.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\AddressBook\Binding\Base\AddressBook.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\AddressBook\Binding\iOS\AddressBookIOS.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\AddressBook\Binding\iOS\AddressBookIOS.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\AddressBook\Binding\UnityEditor\AddressBookEditor.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\AddressBook\DataTypes\ContactInfo\AddressBookContact.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\AddressBook\DataTypes\ContactInfo\AndroidAddressBookContact.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\AddressBook\DataTypes\ContactInfo\EditorAddressBookContact.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\AddressBook\DataTypes\ContactInfo\iOSAddressBookContact.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\AddressBook\DataTypes\Enums\Enums.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\NetworkConnectivity\Binding\Android\NetworkConnectivityAndroid.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\NetworkConnectivity\Binding\Android\NetworkConnectivityAndroid.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\NetworkConnectivity\Binding\Android\NetworkConnectivityAndroid.Native.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\NetworkConnectivity\Binding\Base\NetworkConnectivity.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\NetworkConnectivity\Binding\Base\NetworkConnectivity.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\NetworkConnectivity\Binding\iOS\NetworkConnectivityIOS.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\NetworkConnectivity\Binding\UnityEditor\NetworkConnectivityEditor.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\NetworkConnectivity\Settings\NetworkConnectivitySettings.Android.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\NetworkConnectivity\Settings\NetworkConnectivitySettings.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Android\SharingAndroid.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Android\SharingAndroid.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Android\SharingAndroid.Mail.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Android\SharingAndroid.Mail.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Android\SharingAndroid.Messaging.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Android\SharingAndroid.Messaging.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Android\SharingAndroid.Native.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Android\SharingAndroid.Social.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Android\SharingAndroid.WhatsApp.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Android\SharingAndroid.WhatsApp.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Base\Sharing.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Base\Sharing.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Base\Sharing.Mail.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Base\Sharing.Mail.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Base\Sharing.Messaging.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Base\Sharing.Messaging.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Base\Sharing.Social.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Base\Sharing.Social.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Base\Sharing.WhatsApp.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\Base\Sharing.WhatsApp.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\iOS\SharingIOS.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\iOS\SharingIOS.Mail.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\iOS\SharingIOS.Mail.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\iOS\SharingIOS.Messaging.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\iOS\SharingIOS.Messaging.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\iOS\SharingIOS.Social.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\iOS\SharingIOS.Social.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\iOS\SharingIOS.WhatsApp.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\UnityEditor\SharingEditor.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\UnityEditor\SharingEditor.Mail.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\UnityEditor\SharingEditor.Messaging.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\UnityEditor\SharingEditor.Social.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Binding\UnityEditor\SharingEditor.WhatsApp.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\DataTypes\Composer\Mail\MailShareComposer.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\DataTypes\Composer\Message\MessageShareComposer.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\DataTypes\Composer\SocialNetwork\FBShareComposer.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\DataTypes\Composer\SocialNetwork\SocialShareComposerBase.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\DataTypes\Composer\SocialNetwork\TwitterShareComposer.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\DataTypes\Composer\WhatsApp\WhatsAppComposer.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\DataTypes\Enums\Enums.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\DataTypes\Interface\IShareView.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\DataTypes\ShareSheet\ShareSheet.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\DataTypes\ShareSheet\SocialShareSheet.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Sharing\Utility\ShareImageUtility.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\Android\UIAndroid.AlertDialog.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\Android\UIAndroid.AlertDialog.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\Android\UIAndroid.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\Android\UIAndroid.Native.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\Android\UIAndroid.PromptDialog.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\Android\UIAndroid.PromptDialog.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\Base\UI.AlertDialog.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\Base\UI.AlertDialog.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\Base\UI.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\Base\UI.PromptDialog.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\Base\UI.PromptDialog.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\iOS\UIIOS.AlertDialog.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\iOS\UIIOS.AlertDialog.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\iOS\UIIOS.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\iOS\UIIOS.PromptDialog.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\iOS\UIIOS.PromptDialog.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\UnityEditor\UIEditor.AlertDialog.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\UnityEditor\UIEditor.AlertDialog.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\UnityEditor\UIEditor.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\UnityEditor\UIEditor.PromptDialog.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\Binding\UnityEditor\UIEditor.PromptDialog.Events.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\UI\DataTypes\Enums\Enums.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\DataTypes\RateMyApp\Internal\IRateMyAppEventResponder.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\DataTypes\RateMyApp\Internal\IRateMyAppKeysCollection.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\DataTypes\RateMyApp\Internal\IRateMyAppOperationHandler.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\DataTypes\RateMyApp\Internal\IRateMyAppViewController.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\DataTypes\RateMyApp\Internal\RateMyAppGenericController.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\DataTypes\RateMyApp\Internal\RateMyAppGenericStoreBase.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\DataTypes\RateMyApp\Internal\RateMyAppIOSStoreController.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\DataTypes\RateMyApp\IRateMyAppDelegate.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\DataTypes\RateMyApp\RateMyApp.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\DataTypes\RateMyApp\RateMyAppSettings.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\Platform\IUtilityPlatform.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\Platform\UtilityAndroid.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\Platform\UtilityAndroid.Native.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\Platform\UtilityIOS.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\Platform\UtilityUnsupported.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\Settings\UtilitySettings.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Features\Utility\Source\Utility.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Helpers\PlatformBinding\PlatformBindingHelper.Android.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Plugins\Helpers\PlatformBinding\PlatformBindingHelper.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\AddonServices\OneSignal\Settings\OneSignalServiceSettings.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\AddonServices\OneSignal\Utility\OneSignalServiceUtility.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Internal\Attributes\NotifyNPSettingsOnValueChangeAttribute.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Internal\Misc\Constants\Constants.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Internal\Misc\Object\InstanceIDGenerator.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Internal\Misc\Object\NPObject.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Internal\Misc\Object\NPObjectManager.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Internal\Simulators\AddressBook\EditorAddressBook.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Internal\Simulators\UI\EditorUIHandler.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Internal\Utility\NPEditorUtility.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Misc\Constants\MIMEType.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Misc\ID\Enums.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Misc\ID\IDContainer.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Misc\ID\IIdentifierContainer.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Misc\ID\IIdentifierContainerUtils.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Misc\ID\PlatformValue.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Misc\PlatformValueHelper.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Misc\Utils\AndroidPluginUtility.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Misc\Utils\NPAndroidManifestGenerator.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\NP\NPAssetManager.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\NP\NPBinding.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\NP\NPEditorManager.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\NP\NPSettings.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Settings\AddonServices\AddonServicesSettings.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Settings\Application\ApplicationSettings.AddonServices.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Settings\Application\ApplicationSettings.AndroidSettings.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Settings\Application\ApplicationSettings.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Settings\Application\ApplicationSettings.Features.cs" />
+     <Compile Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Scripts\Settings\Application\ApplicationSettings.iOSSettings.cs" />
+     <None Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Readme.txt" />
+     <None Include="Assets\Standard Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\License.txt" />
+     <None Include="Assets\Standard Assets\VoxelBusters\NativePlugins\Third-Party Notices.txt" />
+     <None Include="Assets\Standard Assets\VoxelBusters\NativePlugins\link.xml" />
+     <None Include="Assets\Standard Assets\VoxelBusters\NativePlugins\XcodeModifier.txt" />
+     <None Include="Assets\Standard Assets\VoxelBusters\NativePlugins\ReleaseNotes.txt" />
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterInputModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterRendererModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WebModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StyleSheetsModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticlesLegacyModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIAutomation">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>C:/Program Files/Unity2017_4_33f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="Ionic.Zlib.CF">
+ <HintPath>C:/Unity Projects/AG Uploader/Assets/UnityHTTP/lib/Ionic.Zlib.CF.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Users/Assassinshadow/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>C:/Users/Assassinshadow/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>C:/Users/Assassinshadow/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
